@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Cheat Sheet</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <main>
+
+        <h1> HTML Element Reference </h1>
+
+        <table>
+
+            <caption> <h2> Table Elements </h2> </caption>
+
+            <thead>
+                <tr>
+                    <th> Tag </th>
+                    <th> Name </th>
+                    <th> Description </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td> &lt;caption> </td>
+                    <td> Caption </td>
+                    <td> 
+                        Defines a table caption.
+                        The caption element must be defined directly
+                        after the &lt;table> element.
+                        By default the caption is center aligned
+                        above the table
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;table> </td>
+                    <td> Table </td>
+                    <td> Wrapper for all table elements </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;thead> </td>
+                    <td> Table Head </td>
+                    <td>
+                        Wrapper for heading elements.
+                        Specifies the heading part of the table
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td> &lt;th> </td> 
+                    <td> Table Header </td>
+                    <td> 
+                        Defines a header cell.
+                        Text in header cells are bold and centered by default
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;tbody> </td>
+                    <td> Table Body </td>
+                    <td> 
+                        Wrapper for the body table elements.
+                        Specifies the main portion of the table 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;tr> </td>
+                    <td> Table Row </td>
+                    <td> Wrapper for a single row of table data</td>
+                </tr>
+
+                <tr>
+                    <td> &lt;td> </td>
+                    <td> Table Data </td>
+                    <td> 
+                        Defines a data cell.
+                        Text in data cells are left-aligned by default
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;tfoot> </td>
+                    <td> Table Foot </td>
+                    <td> 
+                        Wrapper for table footer elements.
+                        Specifies the end of the table 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;colgroup> </td>
+                    <td> Column Group </td>
+                    <td> 
+                        Specifies a group of one or more columns for formatting.
+                        Useful for applying styles to columns without having to repeat
+                        styles for each cell in each row.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> &lt;col> </td>
+                    <td> Column </td>
+                    <td> 
+                        Specifies column properties for each column 
+                        within a &lt;colgroup> element.
+                        Use span attribute to select multiple columns
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <details>
+            <summary>
+                <strong>&lt;thead>, &lt;tbody>, and &lt;tfoot></strong>
+            </summary> 
+            Can be used in conjunction to allow scrolling of the body 
+            independant of the header and footer. When a table spans 
+            multiple pages, they also allow for the header and footer 
+            to be printed at the top and bottom of each page.
+        </details>
+
+    </main>
+
+</html>
