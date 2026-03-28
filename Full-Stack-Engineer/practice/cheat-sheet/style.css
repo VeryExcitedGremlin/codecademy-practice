@@ -48,6 +48,11 @@ tr td:nth-child(3n-1){
     white-space: nowrap;
 }
 
+tr td:nth-child(3n-2) span, .tag{
+    font-family: monospace;
+    background-color: hsla(0, 0%, 50%, 0.5);
+}
+
 p {
     border-style: solid none;
     /* border: 2px solid #554961; */
