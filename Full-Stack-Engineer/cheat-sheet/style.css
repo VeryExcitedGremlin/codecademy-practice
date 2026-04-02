@@ -41,16 +41,17 @@ tbody tr:nth-child(even){
 td {
     border-top: 2px solid #554961;
     padding: 10px;
-    text-align: center;
 }
 
 tr td:nth-child(3n-1){
     white-space: nowrap;
+    text-align: center;
 }
 
 tr td:nth-child(3n-2) span, .tag{
     font-family: monospace;
     background-color: hsla(0, 0%, 50%, 0.5);
+    text-align: center;
 }
 
 p {
