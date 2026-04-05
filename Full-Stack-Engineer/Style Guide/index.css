@@ -2,8 +2,14 @@ body {
     background: linear-gradient(135deg, #E079C0 0%, #B2E079 100%);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .outerSection {
-    width: 90vw;
+    width: 70vw;
     background-color: #fffaf3;
     border-radius: 2em;
     padding: 2em;
@@ -14,14 +20,15 @@ body {
     align-items: center;
 }
 
-.inner-section {
-    width: 75vw;
-    background-color: #FFECD6;
+.innerSection {
+    width: 55vw;
+    /* background-color: #FFECD6;
     border: 0.5em solid #FFE4C4;
-    border-radius: 1em;
+    border-radius: 1em; */
     padding: 3em 2em;
     margin: 1em;
     justify-content: center;
+    flex-direction: column;
 }
 
 #lightPurple {
@@ -60,12 +67,37 @@ body {
     background-color: #FFE4C4;
 }
 
-#fontsInner {
+#fontsInner, #stylesInner, .styleGroup {
     display: flex;
+}
+
+.styleGroup {
+    flex-direction: column;
+}
+
+.styleGroup div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.style {
+    width: fit-content;
 }
 
 .font {
     padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font p {
+    width: fit-content;
+}
+
+h3 {
+    text-align: center;
 }
 
 .delius {
@@ -76,11 +108,41 @@ body {
   font-family: "Chiron GoRound TC", sans-serif;
 }
 
-@media (max-width: 960px) {
+@media (min-width: 500px) {
+    .outerSection {
+        width: 80vw;
+    }
+    .innerSection {
+        width: 65vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .styleGroup {
+        flex-direction: row;
+    }
+    .outerSection {
+        width: 85vw;
+    }
+    .innerSection {
+        width: 70vw;
+    }
+    #stylesInner {
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
     #fontsInner {
-        flex-direction: column;
+        flex-direction: row;
     }
     .font {
         padding: 1vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    #stylesInner {
+        flex-direction: row;
     }
 }
