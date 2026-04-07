@@ -8,6 +8,23 @@ main {
     align-items: center;
 }
 
+.headingMain {
+    font-size: 40px;
+}
+
+.navHeading {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.heading {
+    font-weight: 600;
+}
+
+.text {
+    font-weight: 400;
+}
+
 .outerSection {
     width: 70vw;
     background-color: #fffaf3;
@@ -21,17 +38,35 @@ main {
 }
 
 .innerSection {
-    width: 55vw;
+    width: 65vw;
     /* background-color: #FFECD6;
     border: 0.5em solid #FFE4C4;
     border-radius: 1em; */
     padding: 3em 2em;
-    margin: 1em;
+    margin: 1em 0;
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#lightPurple {
+table {
+    border: 2px solid #564a61;
+    border-radius: 8px;
+}
+
+th, .color {
+    border-radius: 4px;
+}
+
+td {
+    padding: 1vw 0;
+}
+
+tbody tr :nth-child(n+2) {
+    border-top: 2px solid #564a61;
+}
+
+th, #lightPurple {
     background-color: #AE79E0;
 }
 
@@ -81,7 +116,7 @@ main {
     align-items: center;
 }
 
-.style {
+.styleList {
     width: fit-content;
 }
 
@@ -96,7 +131,7 @@ main {
     width: fit-content;
 }
 
-h3 {
+h3, .hex {
     text-align: center;
 }
 
@@ -104,7 +139,7 @@ h3 {
   font-family: "Delius", cursive;
 }
 
-.GoRound {
+.GoRound, .styleList {
   font-family: "Chiron GoRound TC", sans-serif;
 }
 
@@ -119,7 +154,7 @@ h3 {
 
 @media (min-width: 768px) {
     .styleGroup {
-        flex-direction: row;
+        justify-content: space-between;
     }
     .outerSection {
         width: 85vw;
@@ -128,21 +163,27 @@ h3 {
         width: 70vw;
     }
     #stylesInner {
+        flex-direction: row;
         align-items: center;
+        justify-content: space-around;
     }
 }
 
 @media (min-width: 992px) {
     #fontsInner {
         flex-direction: row;
+        justify-content: space-around;
     }
     .font {
         padding: 1vw;
     }
+    /* .style {
+        padding: 0 2vw;
+    } */
 }
 
-@media (min-width: 1200px) {
-    #stylesInner {
-        flex-direction: row;
+/* @media (min-width: 1200px) {
+    .style {
+        padding: 0 4vw;
     }
-}
+} */

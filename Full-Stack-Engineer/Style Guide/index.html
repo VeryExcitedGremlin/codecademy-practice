@@ -15,7 +15,7 @@
     <body id="top">
 
         <header class="bookend">
-            <h1 class="delius heading"> My Website Style Guide </h1>
+            <h1 class="delius headingMain"> My Website Style Guide </h1>
         </header>
 
         <main>
@@ -24,13 +24,13 @@
                 <div class="innerSection">
                     <table>
                         <thead>
-                            <tr>
+                            <tr class="delius">
                                 <th> Color </th>
                                 <th> Hex Code </th>
                                 <th> Use </th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="GoRound">
                             <!-- <tr>
                                 <td class="color" id=""></td>
                                 <td class="hex"></td>
@@ -39,7 +39,7 @@
                             <tr>
                                 <td class="color" id="lightPurple"></td>
                                 <td class="hex">#AE79E0</td>
-                                <td class="use">Main headings and footers</td>
+                                <td class="use">Main color, headings and footers</td>
                             </tr>
                             <tr>
                                 <td class="color" id="darkPurple"></td>
@@ -49,7 +49,7 @@
                             <tr>
                                 <td class="color" id="lightPink"></td>
                                 <td class="hex">#E079C0</td>
-                                <td class="use">Secondary color, often for buttons, background gradient top</td>
+                                <td class="use">Secondary color, buttons, background gradient top</td>
                             </tr>
                             <tr>
                                 <td class="color" id="darkPink"></td>
@@ -90,7 +90,7 @@
                 <div id="fontsInner" class="innerSection">
                     <div class="font">
             
-                        <h3>
+                        <h3 class="delius">
                             <u> Delius </u>
                         </h3>
             
@@ -104,7 +104,7 @@
                     </div>
                     <div class="font">
             
-                        <h3>
+                        <h3 class="GoRound">
                             <u> Chiron GoRound TC </u>
                         </h3>
             
@@ -122,33 +122,35 @@
                 <h2 class="delius"> Text Styles </h2>
                 <div id="stylesInner" class="innerSection">
                     <div id="styleGroupOne" class="styleGroup">
-                        <div>
-                            <h3 class="heading"> H1: Main Page Heading </h3>
-                            <ul class="style">
+                        <div class="style">
+                            <h3 class="headingMain delius"> H1: Main Page Heading </h3>
+                            <ul class="styleList">
                                 <li> Font-weight: 700 (bold) </li>
                                 <li> Font-size: 40px </li>
                                 <li> Font-family: "Delius", cursive </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3> H2: Nav Headings </h3>
-                            <ul class="style">
-                                <li> Font-weight: 700 (bold) </li>
+                        <div class="style">
+                            <h3 class="delius navHeading"> H2: Nav Headings </h3>
+                            <ul class="styleList">
+                                <li> Font-weight: 600 </li>
                                 <li> Font-size: 20px </li>
                                 <li> Font-family: "Delius", cursive </li>
                             </ul>
                         </div>
                     </div>
                     <div id="styleGroupTwo" class="styleGroup">
-                        <div>
-                            <h3> Other Headings </h3>
-                            <ul class="style">
+                        <div class="style">
+                            <h3 class="delius heading"> Other Headings </h3>
+                            <ul class="styleList">
+                                <li> Font-weight: 600 </li>
                                 <li> Font-family: "Delius", cursive </li>
                             </ul>
                         </div>
-                        <div>
-                            <h3> Other Text </h3>
-                            <ul class="style">
+                        <div class="style">
+                            <h3 class="GoRound text"> Other Text </h3>
+                            <ul class="styleList">
+                                <li> Font-weight: 400 (regular) </li>
                                 <li> Font-family: "Chiron GoRound TC", sans-serif; </li>
                             </ul>
                         </div>
