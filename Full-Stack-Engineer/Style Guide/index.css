@@ -1,53 +1,9 @@
-body {
-    background: linear-gradient(135deg, #E079C0 0%, #B2E079 100%);
-}
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.headingMain {
-    font-size: 40px;
-}
-
-.navHeading {
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.heading {
-    font-weight: 600;
-}
-
-.text {
-    font-weight: 400;
-}
-
-.outerSection {
-    width: 70vw;
-    background-color: #fffaf3;
-    border-radius: 2em;
-    padding: 2em;
-    margin: 3em 0;
-    filter: drop-shadow(0em 0em 0.5em rgba(0, 0, 0, 0.205));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.innerSection {
-    width: 65vw;
-    /* background-color: #FFECD6;
-    border: 0.5em solid #FFE4C4;
-    border-radius: 1em; */
-    padding: 3em 2em;
-    margin: 1em 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 
 table {
     border: 2px solid #564a61;
@@ -56,6 +12,10 @@ table {
 
 th, .color {
     border-radius: 4px;
+}
+
+h3, .hex {
+    text-align: center;
 }
 
 td {
@@ -102,9 +62,23 @@ th, #lightPurple {
     background-color: #FFE4C4;
 }
 
+
 #fontsInner, #stylesInner, .styleGroup {
     display: flex;
 }
+
+
+.font {
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font p {
+    width: fit-content;
+}
+
 
 .styleGroup {
     flex-direction: column;
@@ -120,47 +94,24 @@ th, #lightPurple {
     width: fit-content;
 }
 
-.font {
-    padding: 0 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.headingMain {
+    height: fit-content;
+    font-size: 40px;
 }
 
-.font p {
-    width: fit-content;
+.text {
+    font-weight: 400;
 }
 
-h3, .hex {
-    text-align: center;
-}
 
-.delius {
-  font-family: "Delius", cursive;
-}
-
-.GoRound, .styleList {
+.styleList {
   font-family: "Chiron GoRound TC", sans-serif;
 }
 
-@media (min-width: 500px) {
-    .outerSection {
-        width: 80vw;
-    }
-    .innerSection {
-        width: 65vw;
-    }
-}
 
 @media (min-width: 768px) {
     .styleGroup {
         justify-content: space-between;
-    }
-    .outerSection {
-        width: 85vw;
-    }
-    .innerSection {
-        width: 70vw;
     }
     #stylesInner {
         flex-direction: row;
@@ -177,13 +128,4 @@ h3, .hex {
     .font {
         padding: 1vw;
     }
-    /* .style {
-        padding: 0 2vw;
-    } */
 }
-
-/* @media (min-width: 1200px) {
-    .style {
-        padding: 0 4vw;
-    }
-} */

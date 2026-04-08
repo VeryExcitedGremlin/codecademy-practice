@@ -5,8 +5,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Style Guide</title>
-        <link rel="stylesheet" href="../../personal-footer/personal-footer.css" />
+        <link rel="stylesheet" href="../../resources/universalStyles.css" />
         <link rel="stylesheet" href="index.css" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Delius&display=swap" rel="stylesheet">
@@ -16,21 +17,26 @@
 
         <header class="bookend">
             <h1 class="delius headingMain"> My Website Style Guide </h1>
+            <nav>
+                <a class="navHeading" href="#colors">Colors</a>
+                <a class="navHeading" href="#fonts">Fonts</a>
+                <a class="navHeading" href="#styles">Text Styles</a>
+            </nav>
         </header>
 
         <main>
             <section id="colors" class="outerSection">
-                <h2 class="delius"> Colors </h2>
+                <h2> Colors </h2>
                 <div class="innerSection">
                     <table>
                         <thead>
                             <tr class="delius">
-                                <th> Color </th>
-                                <th> Hex Code </th>
-                                <th> Use </th>
+                                <th> <h3> Color </h3> </th>
+                                <th> <h3> Hex Code </h3> </th>
+                                <th> <h3> Use </h3> </th>
                             </tr>
                         </thead>
-                        <tbody class="GoRound">
+                        <tbody>
                             <!-- <tr>
                                 <td class="color" id=""></td>
                                 <td class="hex"></td>
@@ -86,13 +92,11 @@
                 </div>
             </section>
             <section id="fonts" class="outerSection">
-                <h2 class="delius"> Fonts </h2>
+                <h2> Fonts </h2>
                 <div id="fontsInner" class="innerSection">
                     <div class="font">
             
-                        <h3 class="delius">
-                            <u> Delius </u>
-                        </h3>
+                        <h3> Delius </h3>
             
                         <p class="delius">The quick brown fox jumps over the lazy dog.</p>
                         <p class="delius">
@@ -104,26 +108,24 @@
                     </div>
                     <div class="font">
             
-                        <h3 class="GoRound">
-                            <u> Chiron GoRound TC </u>
-                        </h3>
+                        <h3 class="GoRound"> Chiron GoRound TC </h3>
             
-                        <p class="GoRound">The quick brown fox jumps over the lazy dog.</p>
-                        <p class="GoRound">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p>
                             <strong> The quick brown fox jumps over the lazy dog. </strong>
                         </p>
-                        <p class="GoRound">
+                        <p>
                             <em> The quick brown fox jumps over the lazy dog. </em>
                         </p>
                     </div>
                 </div>
             </section>
             <section id="styles" class="outerSection">
-                <h2 class="delius"> Text Styles </h2>
+                <h2> Text Styles </h2>
                 <div id="stylesInner" class="innerSection">
                     <div id="styleGroupOne" class="styleGroup">
                         <div class="style">
-                            <h3 class="headingMain delius"> H1: Main Page Heading </h3>
+                            <h3 class="headingMain"> H1: Main Page Heading </h3>
                             <ul class="styleList">
                                 <li> Font-weight: 700 (bold) </li>
                                 <li> Font-size: 40px </li>
@@ -131,9 +133,9 @@
                             </ul>
                         </div>
                         <div class="style">
-                            <h3 class="delius navHeading"> H2: Nav Headings </h3>
+                            <h3 class="navHeading"> H2: Nav Headings </h3>
                             <ul class="styleList">
-                                <li> Font-weight: 600 </li>
+                                <li> Font-weight: 700 (bold) </li>
                                 <li> Font-size: 20px </li>
                                 <li> Font-family: "Delius", cursive </li>
                             </ul>
@@ -141,14 +143,14 @@
                     </div>
                     <div id="styleGroupTwo" class="styleGroup">
                         <div class="style">
-                            <h3 class="delius heading"> Other Headings </h3>
+                            <h3 class="heading"> Other Headings </h3>
                             <ul class="styleList">
-                                <li> Font-weight: 600 </li>
+                                <li> Font-weight: 700 (bold) </li>
                                 <li> Font-family: "Delius", cursive </li>
                             </ul>
                         </div>
                         <div class="style">
-                            <h3 class="GoRound text"> Other Text </h3>
+                            <h3 class="GoRound text"> Non-Heading Text </h3>
                             <ul class="styleList">
                                 <li> Font-weight: 400 (regular) </li>
                                 <li> Font-family: "Chiron GoRound TC", sans-serif; </li>
@@ -162,11 +164,11 @@
     </body>
 
     <footer class="bookend">
-        <h2 class="delius">Posted by Ashton Oder 2026</h2>
-        <h3 class="delius">Updated: 4/3/2026</h3><br>
+        <h2>Posted by Ashton Oder 2026</h2>
+        <h3>Updated: 4/3/2026</h3><br>
         <nav>
-            <a href="#top">Back to Top</a>
-            <a href="/">Return to projects homepage</a>
+            <a class="navHeading" href="#top">Back to Top</a>
+            <a class="navHeading" href="/">Return to projects homepage</a>
         </nav>
     </footer>
 
