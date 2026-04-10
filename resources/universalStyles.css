@@ -72,6 +72,15 @@ a:visited {
 }
 
 
+.delius {
+  font-family: "Delius", cursive;
+}
+
+.GoRound {
+  font-family: "Chiron GoRound TC", sans-serif;
+}
+
+
 
 .outerSection {
     width: 90vw;
@@ -95,15 +104,6 @@ a:visited {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-
-.delius {
-  font-family: "Delius", cursive;
-}
-
-.GoRound {
-  font-family: "Chiron GoRound TC", sans-serif;
 }
 
 

@@ -16,7 +16,7 @@
     <body id="top">
 
         <header class="bookend">
-            <h1 class="delius headingMain"> My Website Style Guide </h1>
+            <h1 class="headingMain"> My Website Style Guide </h1>
             <nav>
                 <a class="navHeading" href="#colors">Colors</a>
                 <a class="navHeading" href="#fonts">Fonts</a>
@@ -30,7 +30,7 @@
                 <div class="innerSection">
                     <table>
                         <thead>
-                            <tr class="delius">
+                            <tr>
                                 <th> <h3> Color </h3> </th>
                                 <th> <h3> Hex Code </h3> </th>
                                 <th> <h3> Use </h3> </th>
@@ -75,12 +75,12 @@
                             <tr>
                                 <td class="color" id="outerSection"></td>
                                 <td class="hex">#FFFaF3</td>
-                                <td class="use">Defines a section, or alternating color within a table for readability</td>
+                                <td class="use">Defines a section, alternating color within a table for readability</td>
                             </tr>
                             <tr>
                                 <td class="color" id="innerSection"></td>
                                 <td class="hex">#FFECD6</td>
-                                <td class="use">Defines a section within a section, or alternating color within a table for readability</td>
+                                <td class="use">Defines a section within a section, alternating color within a table for readability</td>
                             </tr>
                             <tr>
                                 <td class="color" id="innerSectionBorder"></td>
@@ -122,8 +122,8 @@
             </section>
             <section id="styles" class="outerSection">
                 <h2> Text Styles </h2>
-                <div id="stylesInner" class="innerSection">
-                    <div id="styleGroupOne" class="styleGroup">
+                <div class="innerSection stylesInner">
+                    <div class="styleGroup">
                         <div class="style">
                             <h3 class="headingMain"> H1: Main Page Heading </h3>
                             <ul class="styleList">
@@ -141,7 +141,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="styleGroupTwo" class="styleGroup">
+                    <div class="styleGroup">
                         <div class="style">
                             <h3 class="heading"> Other Headings </h3>
                             <ul class="styleList">
@@ -156,6 +156,63 @@
                                 <li> Font-family: "Chiron GoRound TC", sans-serif; </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sections" class="outerSection">
+                <h2> Section Styles </h2>
+                <div id="sectionsInner" class="innerSection style">
+                    <div>
+                        <h3> Outer Section </h3>
+                        <ul>
+                            <li>class: outerSection</li>
+                            <li>width: 90vw</li>
+                            <li>background-color: #fffaf3</li>
+                            <li>border-radius: 2em</li>
+                            <li>padding: 2em 0</li>
+                            <li>margin: 3em 0</li>
+                            <li>filter: drop-shadow(0em 0em 0.5em rgba(0, 0, 0, 0.205))</li>
+                            <li>display: flex</li>
+                            <li>flex-direction: column</li>
+                            <li>align-items: center</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3> Inner Section </h3>
+                        <ul>
+                            <li>class: innerSection</li>
+                            <li>width: 65vw</li>
+                            <li>background-color: #FFECD6</li>
+                            <li>border: 0.5em solid #FFE4C4</li>
+                            <li>border-radius: 1em</li>
+                            <li>padding: 3em 1em</li>
+                            <li>margin: 1em 0</li>
+                            <li>display: flex</li>
+                            <li>justify-content: center</li>
+                            <li>flex-direction: column</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3> Responsive Breakpoints </h3>
+                            <div class="stylesInner">
+                                <div class="style">
+                                    <h4> min-width: 500px </h4>
+                                    <ul>
+                                        <li>class: innerSection</li>
+                                        <li>padding: 3em 2em</li>
+                                    </ul>
+                                </div>
+                                <div class="style">
+                                    <h4> min-width: 768px </h4>
+                                    <ul>
+                                        <li>class: innerSection</li>
+                                        <li>padding: 3em</li>
+                                    </ul>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </section>

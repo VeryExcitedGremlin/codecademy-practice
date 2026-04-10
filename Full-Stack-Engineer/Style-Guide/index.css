@@ -14,7 +14,7 @@ th, .color {
     border-radius: 4px;
 }
 
-h3, .hex {
+h3, h4, .hex {
     text-align: center;
 }
 
@@ -24,6 +24,14 @@ td {
 
 tbody tr :nth-child(n+2) {
     border-top: 2px solid #564a61;
+}
+
+tbody tr:nth-child(even){
+    background-color: #FFFaF3;
+}
+
+.use {
+    padding-left: 1em;
 }
 
 th, #lightPurple {
@@ -63,16 +71,8 @@ th, #lightPurple {
 }
 
 
-#fontsInner, #stylesInner, .styleGroup {
-    display: flex;
-}
-
-
 .font {
     padding: 0 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .font p {
@@ -84,18 +84,21 @@ th, #lightPurple {
     flex-direction: column;
 }
 
-.styleGroup div {
+.style, .font {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.styleList {
+.style {
+    margin: 0 2vw;
+}
+
+ul {
     width: fit-content;
 }
 
 .headingMain {
-    height: fit-content;
     font-size: 40px;
 }
 
@@ -104,16 +107,9 @@ th, #lightPurple {
 }
 
 
-.styleList {
-  font-family: "Chiron GoRound TC", sans-serif;
-}
-
-
 @media (min-width: 768px) {
-    .styleGroup {
-        justify-content: space-between;
-    }
-    #stylesInner {
+    .stylesInner {
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
