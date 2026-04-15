@@ -1,0 +1,104 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
+#logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+#headNav {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: seashell;
+}
+nav a:visited {
+    color: seashell;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mission {
+    background-image: url('resources/mission-background.jpg');
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    background-color: black;
+    text-align: center;
+    width: 1200px;
+}
+
+#missionTitle h2 {
+    margin-top: 10px;
+}
+
+#missionTitle h4 {
+    margin-bottom: 10px;
+}
+
+#featured img {
+    height: 200px;
+    width: 300px;
+}
+
+
+.bookend {
+    background-color: #AE79E0;
+    border: solid .2em #564A61;
+    filter: drop-shadow(0em 0em 0.5em rgba(0, 0, 0, 0.205));
+    box-sizing: border-box;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    color: black;
+}
+
+.bookend a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.bookend a:visited {
+    color: black;
+}
+
+.delius {
+  font-family: "Delius", cursive;
+}
+
+.GoRound {
+  font-family: "Chiron GoRound TC", sans-serif;
+}

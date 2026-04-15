@@ -107,6 +107,12 @@ ul {
 }
 
 
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
 @media (min-width: 768px) {
     .stylesInner {
         display: flex;
